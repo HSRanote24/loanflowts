@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
 export const LoanContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

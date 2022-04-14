@@ -1,9 +1,10 @@
 import styled from "styled-components";
 export const LoanContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px;
-  min-height: auto;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 56px;
+  
   div > p {
     font-family: "Poppins";
     font-style: normal;
@@ -21,6 +22,8 @@ export const LoanContainer = styled.div`
   }
   div > img {
     width: 100%;
+    min-height: 100%;
+    align-self:center;
   }
 `;
 export const AssistanceContainer = styled.div`
@@ -31,6 +34,7 @@ export const AssistanceContainer = styled.div`
   padding: 50px;
   image {
     width: 555px;
+    
   }
   div > h1 {
     color: #363B97;
@@ -100,7 +104,9 @@ export const LoanAmount = styled.div`
   }
   input {
     width: 400px;
+    color: #FFFFFF;
   }
+  
 `;
 export const LoanTenure = styled.div`
   display: flex;

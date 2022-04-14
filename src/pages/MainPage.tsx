@@ -47,7 +47,7 @@ const MainPage = () => {
       <LoanContainer>
         <div>
           <p>
-            Loan upto 1,00,000 at
+            Loan upto 1,00,000 at<br />
              your fingertips
           </p>
           <button>Borrow now</button>
@@ -96,7 +96,7 @@ const MainPage = () => {
         <InterestRate>
           <p>Rate of interest</p>
           <input type="range" />
-          <button>12%</button>
+          <button>{12}%</button>
         </InterestRate>
         <BorderLine></BorderLine>
       </CalculatorWrapper>
