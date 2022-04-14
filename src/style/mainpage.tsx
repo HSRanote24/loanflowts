@@ -13,23 +13,22 @@ export const LoanContainer = styled.div`
     line-height: 54px;
     color: #363E98;
   }
-  div > button {
-    background: #363B97;
-    border-radius: 8px;
-    height: 48px;
-    width: 145px;
-    color: #FFFFFF;
-  }
+
   div > img {
-    width: 100%;
-    min-height: 100%;
+   
+    min-height: 40%;
     align-self:center;
   }
+  @media (max-width: 913px) {
+    /* padding-top: 5px;  */
+    flex-direction: column;
+  }
+  
 `;
 export const AssistanceContainer = styled.div`
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
+display: flex;
+align-items: center;
+justify-content: center;
   background: #F2F3F8;
   padding: 50px;
   image {
@@ -38,6 +37,10 @@ export const AssistanceContainer = styled.div`
   }
   div > h1 {
     color: #363B97;
+  }
+  @media (max-width: 913px) {
+    /* padding-top: 5px;  */
+    flex-direction: column;
   }
 `;
 export const AssistanceForm = styled.form`
@@ -172,8 +175,11 @@ export const BorderLine = styled.div`
 export const ApplicationCntainer = styled.div`
   padding: 50px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  @media (max-width: 913px) {
+    /* padding-top: 5px;  */
+    flex-direction: column;
+  }
   div > button {
     background: #363B97;
     border-radius: 8px;

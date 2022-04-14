@@ -39,7 +39,10 @@ export const ThirdDiv = styled.button`
     display: flex;
     align-items: center;
     gap: 10px;
-
+  
+    @media (max-width: 768px) {
+      display: none;
+    }
     img {width:15px}
 
 `;
@@ -54,7 +57,9 @@ export const FourthDiv = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
-
+    @media (max-width: 768px) {
+      display: none;
+    }
     img {width:15px}
 `;
 
