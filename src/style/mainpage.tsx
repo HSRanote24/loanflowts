@@ -4,6 +4,8 @@ export const LoanContainer = styled.div`
   align-items: center;
   justify-content: center;
   column-gap: 56px;
+  padding: 45px 35px 60px 35px;
+  margin: 0 auto;
   
   div > p {
     font-family: "Poppins";
@@ -18,6 +20,8 @@ export const LoanContainer = styled.div`
    
     min-height: 40%;
     align-self:center;
+    padding: 45px 35px 60px 35px;
+  margin: 0 auto;
   }
   @media (max-width: 913px) {
     /* padding-top: 5px;  */
@@ -70,7 +74,7 @@ export const RequestButton = styled.div`
   }
 `;
 export const CalculatorWrapper = styled.div`
-  width: 100%;
+ 
   background: linear-gradient(180deg, #363B97 0%, #454BB6 79.34%, #363B97 100%);
   border: 2px solid #FFFFFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -168,16 +172,18 @@ export const InterestRate = styled.div`
 `;
 export const BorderLine = styled.div`
   width: 967.5px;
-  height: 0px;
+
   border: 1.3px solid #FFFFFF;
   background-color: #FFFFFF;
 `;
 export const ApplicationCntainer = styled.div`
-  padding: 50px;
-  width: 100%;
-  display: flex;
+ display: flex;
+ 
+ justify-content: space-evenly;
+  padding: 45px 35px 60px 35px;
+  margin: 0 auto;
   @media (max-width: 913px) {
-    /* padding-top: 5px;  */
+ 
     flex-direction: column;
   }
   div > button {
@@ -273,7 +279,7 @@ export const PartnerContainer = styled.div`
   }
 `;
 export const PartnerSection = styled.div`
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+
 `;
