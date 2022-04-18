@@ -4,13 +4,14 @@ import CookiePage from "./pages/CookiePage";
 import PrivacyPage from "./pages/PrivacyPage";
 
 
-function App() {
+const App=()=> {
   return (
   <Router>
     <Routes>
       <Route path="/" element={<MainPage/>}/>
       <Route path="/CookiePage" element={<CookiePage/>}/>
       <Route path="/PrivacyPage" element={<PrivacyPage/>}/>
+    
     </Routes>
   </Router>
   );

@@ -20,26 +20,26 @@ import {
   CommentSection,
   PartnerContainer,
   PartnerSection,
-} from "../style/mainpage";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Worker from "../assets/images/worker.jpg";
-import Assistance from "../assets/images/assistance.png";
-import Mobile from "../assets/images/mobile.png";
-import Mobiledots from "../assets/images/mobiledots.png";
-import Rupee from "../assets/images/rupee.png";
-import Home from "../assets/images/home.png";
-import Medical from "../assets/images/medical.png";
-import Tarvel from "../assets/images/travel.png";
-import Wedding from "../assets/images/wedding.png";
-import Creditcard from "../assets/images/creditcard.png";
-import Education from "../assets/images/education.png";
-import Electronics from "../assets/images/electronics.png";
-import Emergency from "../assets/images/emergency.png";
-import Ratingstars from "../assets/images/ratingstars.png";
-import Nira from "../assets/images/nira.png";
-import Shubhlife from "../assets/images/shubhlife.png";
-import Fullerton from "../assets/images/fullerton.png";
+} from "../../style/MainPage/mainpage";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Worker from "../../assets/images/worker.jpg";
+import Assistance from "../../assets/images/assistance.png";
+import Mobile from "../../assets/images/mobile.png";
+import Mobiledots from "../../assets/images/mobiledots.png";
+import Rupee from "../../assets/images/rupee.png";
+import Home from "../../assets/images/home.png";
+import Medical from "../../assets/images/medical.png";
+import Tarvel from "../../assets/images/travel.png";
+import Wedding from "../../assets/images/wedding.png";
+import Creditcard from "../../assets/images/creditcard.png";
+import Education from "../../assets/images/education.png";
+import Electronics from "../../assets/images/electronics.png";
+import Emergency from "../../assets/images/emergency.png";
+import Ratingstars from "../../assets/images/ratingstars.png";
+import Nira from "../../assets/images/nira.png";
+import Shubhlife from "../../assets/images/shubhlife.png";
+import Fullerton from "../../assets/images/fullerton.png";
 const MainPage = () => {
   return (
     <>

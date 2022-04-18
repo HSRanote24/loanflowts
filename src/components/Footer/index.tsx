@@ -7,7 +7,7 @@ import {
   MobileView,
   InfoSection,
   ReadMoreAccordion,
-} from "../style/footer";
+} from "../../style/Footer/footer";
 
 const Footer = () => {
   const [readMore, setReadMore] = useState(false);

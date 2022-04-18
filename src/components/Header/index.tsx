@@ -1,7 +1,7 @@
 import React from 'react'
-import {HeadContainer,FirstDiv,SecondDiv,ThirdDiv,FourthDiv}  from "../style/header";
-import iffinidi from "../assets/images/iffinidi.png";
-import vector from "../assets/images/vector.png";
+import {HeadContainer,FirstDiv,SecondDiv,ThirdDiv,FourthDiv}  from "../../style/Header/header";
+import iffinidi from "../../assets/images/iffinidi.png";
+import vector from "../../assets/images/vector.png";
 const Header = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Header = () => {
     <FourthDiv><img src={vector} alt="vector" /><p>English</p></FourthDiv>        
 </HeadContainer>
 </>
-  )
+  )   
 }
 
 export default Header
