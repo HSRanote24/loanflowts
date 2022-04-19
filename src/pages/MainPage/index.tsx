@@ -40,7 +40,9 @@ import Ratingstars from "../../assets/images/ratingstars.png";
 import Nira from "../../assets/images/nira.png";
 import Shubhlife from "../../assets/images/shubhlife.png";
 import Fullerton from "../../assets/images/fullerton.png";
-const MainPage = () => {
+
+
+const MainPage = (props:any) => {
   return (
     <>
       <Header />
@@ -95,8 +97,15 @@ const MainPage = () => {
         </LoanTenure>
         <InterestRate>
           <p>Rate of interest</p>
-          <input type="range" />
-          <button>{12}%</button>
+          <input
+        type="range"
+        min="10"
+        max="100"
+        value={props.value}
+        onChange={(event) => props.onValueUpdated(+event.target.value)}
+      />
+     
+          <p> {props.value}</p>
         </InterestRate>
         <BorderLine></BorderLine>
       </CalculatorWrapper>
