@@ -9,7 +9,6 @@ import {
   LoanAmount,
   LoanTenure,
   TenureButton,
-  InterestRate,
   ApplicationCntainer,
   BorderLine,
   MobileImage,
@@ -40,6 +39,7 @@ import Ratingstars from "../../assets/images/ratingstars.png";
 import Nira from "../../assets/images/nira.png";
 import Shubhlife from "../../assets/images/shubhlife.png";
 import Fullerton from "../../assets/images/fullerton.png";
+import Slider from "../../components/Slider/index"
 
 
 const MainPage = (props:any) => {
@@ -82,7 +82,7 @@ const MainPage = (props:any) => {
         </div>
         <LoanAmount>
           <p>Loan amount</p>
-          <input type="range" />
+          <Slider/>
           <button>30,000</button>
         </LoanAmount>
         <LoanTenure>
@@ -95,18 +95,11 @@ const MainPage = (props:any) => {
           </div>
           <button>6 MONTHS</button>
         </LoanTenure>
-        <InterestRate>
+        <LoanAmount>
           <p>Rate of interest</p>
-          <input
-        type="range"
-        min="10"
-        max="100"
-        value={props.value}
-        onChange={(event) => props.onValueUpdated(+event.target.value)}
-      />
-     
-          <p> {props.value}</p>
-        </InterestRate>
+          <Slider/>
+         
+        </LoanAmount>
         <BorderLine></BorderLine>
       </CalculatorWrapper>
       <ApplicationCntainer>

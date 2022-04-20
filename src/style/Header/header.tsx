@@ -5,6 +5,7 @@ export const HeadContainer = styled.div`
   background: #e5e5e5;
   color: white;
   font-weight: 300;
+  width: 100%;
   
 `;
 export const FirstDiv = styled.div`
