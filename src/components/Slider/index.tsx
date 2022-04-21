@@ -1,24 +1,33 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Slider from '@mui/material/Slider';
+
+import { createTheme } from '@material-ui/core/styles'
+import { ThemeProvider } from "@material-ui/styles";
+import {Container, Container1}  from "../../style/Slider/index";
 
 function valueLabelFormat(value: number) {
-  const units = ['KB', 'MB', 'GB', 'TB'];
 
-  let unitIndex = 0;
   let scaledValue = value;
 
-  while (scaledValue >= 1024 && unitIndex < units.length - 1) {
-    unitIndex += 1;
-    scaledValue /= 1024;
-  }
 
-  return `${scaledValue} ${units[unitIndex]}`;
+  return `${scaledValue} `;
 }
-
+const muiTheme = createTheme({
+  overrides: {
+    MuiSlider: {
+      thumb: {
+        color: "yellow"
+      },
+      track: {
+        color: "red"
+      },
+      rail: {
+        color: "black"
+      }
+    }
+  }
+});
 function calculateValue(value: number) {
-  return 2 ** value;
+  return value;
 }
 
 export default function NonLinearSlider() {
@@ -31,19 +40,24 @@ export default function NonLinearSlider() {
   };
 
   return (
-  
-      <Slider
-        value={value}
-        min={1}
-        step={1}
-        max={100}
-        scale={calculateValue}
-        getAriaValueText={valueLabelFormat}
-        valueLabelFormat={valueLabelFormat}
-        onChange={handleChange}
-        valueLabelDisplay="auto"
-        aria-labelledby="non-linear-slider"
-      />
-  
+    <Container>
+      <ThemeProvider theme={muiTheme}>
+        <Container1
+          value={value}
+          min={1}
+          step={1}
+          max={100}
+          scale={calculateValue}
+          getAriaValueText={valueLabelFormat}
+          valueLabelFormat={valueLabelFormat}
+          onChange={handleChange}
+          valueLabelDisplay="auto"
+          aria-labelledby="non-linear-slider"
+        />
+      </ThemeProvider>
+      <div>
+      <p>{value}</p>
+      </div>
+    </Container>
   );
 }

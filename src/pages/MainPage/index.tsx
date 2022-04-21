@@ -83,7 +83,6 @@ const MainPage = (props:any) => {
         <LoanAmount>
           <p>Loan amount</p>
           <Slider/>
-          <button>30,000</button>
         </LoanAmount>
         <LoanTenure>
           <p>Loan Tenure</p>
