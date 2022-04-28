@@ -23,6 +23,17 @@ export const LoanContainer = styled.div`
     padding: 45px 35px 60px 35px;
   margin: 0 auto;
   }
+  div > button{
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+    background-color: #363b97;
+    border-radius: 10px;
+    border-color: #363b97;
+    border-width: 2px;
+   margin-right:14px;
+  }
   @media (max-width: 913px) {
     /* padding-top: 5px;  */
     flex-direction: column;
@@ -54,16 +65,18 @@ export const AssistanceForm = styled.form`
 export const Name = styled.div`
   input {
     border: none;
-    height: 58px;
-    width: 527px;
+    min-height: 58px;
+    width: 100%;
+    max-width: 527px;
   }
 `;
 export const RequestButton = styled.div`
   display: flex;
   input {
     border: none;
-    height: 58px;
-    width: 428px;
+    min-height: 58px;
+    width: 100%;
+    max-width: 428px;
   }
   button {
     color: #FFFFFF;
@@ -171,7 +184,6 @@ export const InterestRate = styled.div`
   }
 `;
 export const BorderLine = styled.div`
-  width: 967.5px;
 
   border: 1.3px solid #FFFFFF;
   background-color: #FFFFFF;
@@ -230,6 +242,18 @@ export const GridContainer = styled.div`
   row-gap: 50px;
   margin-top: 60px;
   justify-items: center;
+  @media (max-width: 913px) {
+    // future    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+
+    column-gap: 40px;
+  row-gap: 24px;
+}
+@media (max-width: 500px) {
+    column-gap: 10px;
+  row-gap: 4px;
+}
+
 `;
 export const ImageBox = styled.div`
   display: grid;
@@ -272,14 +296,28 @@ export const CommentSection = styled.div`
   }
 `;
 export const PartnerContainer = styled.div`
+  display: grid;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 100px;
+  @media (max-width: 768px) {
+    padding: 70px 150px;
+  }
+
   h1 {
-    color: #363B97;
+    color: #363b97;
   }
 `;
 export const PartnerSection = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
-
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  div > img {
+    max-width: 230px;
+  }
 `;

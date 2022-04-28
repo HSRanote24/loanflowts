@@ -1,4 +1,5 @@
-import React from "react";
+import { useState, useCallback } from "react";
+import { Radio } from 'antd';
 import {
   LoanContainer,
   AssistanceContainer,
@@ -39,10 +40,11 @@ import Ratingstars from "../../assets/images/ratingstars.png";
 import Nira from "../../assets/images/nira.png";
 import Shubhlife from "../../assets/images/shubhlife.png";
 import Fullerton from "../../assets/images/fullerton.png";
-import Slider from "../../components/Slider/index"
+import Slider from "../../components/Slider/index";
 
 
-const MainPage = (props:any) => {
+const MainPage = (props: any) => {
+
   return (
     <>
       <Header />
@@ -50,7 +52,7 @@ const MainPage = (props:any) => {
         <div>
           <p>
             Loan upto 1,00,000 at<br />
-             your fingertips
+            your fingertips
           </p>
           <button>Borrow now</button>
         </div>
@@ -82,24 +84,24 @@ const MainPage = (props:any) => {
         </div>
         <LoanAmount>
           <p>Loan amount</p>
-          <Slider/>
+          <Slider />
         </LoanAmount>
-        <LoanTenure>
+      {/*   <LoanTenure>
           <p>Loan Tenure</p>
-          <div>
-            <TenureButton>3 Months</TenureButton>
-            <TenureButton>6 Months</TenureButton>
-            <TenureButton>9 Months</TenureButton>
-            <TenureButton>12 Months</TenureButton>
-          </div>
+          <Radio.Group defaultValue="a" buttonStyle="solid" optionType="button" > */}
+            {/*  <Radio.Button  value="a">3 months</Radio.Button>
+      <Radio.Button value="b">6 months</Radio.Button>
+      <Radio.Button value="c">9 months</Radio.Button>
+      <Radio.Button value="d">12 months</Radio.Button> */}
+        {/*   </Radio.Group>
           <button>6 MONTHS</button>
-        </LoanTenure>
+        </LoanTenure> */}
         <LoanAmount>
           <p>Rate of interest</p>
-          <Slider/>
-         
+          <Slider />
+
         </LoanAmount>
-        <BorderLine></BorderLine>
+
       </CalculatorWrapper>
       <ApplicationCntainer>
         <MobileImage>
