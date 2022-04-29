@@ -3,10 +3,17 @@ import Slider from '@mui/material/Slider';
 
 export const Container = styled.div` 
 display:flex;
+width: 100%;
+    min-width: 200px;
 width:400px;
 vertical-align: middle;
 align-items: center;
 justify-content: space-evenly;
+@media (max-width: 682px) {
+    width: 100%;
+    min-width: 200px;
+  
+  }
 
 >div{
 border: #FFFFFF solid 2px;

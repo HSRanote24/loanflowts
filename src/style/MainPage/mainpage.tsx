@@ -54,7 +54,7 @@ justify-content: center;
   background: #F2F3F8;
   padding: 50px;
 
-  }
+  
   div > h1 {
     color: #363B97;
   }
@@ -68,7 +68,7 @@ export const AssistanInner = styled.div`
 img {
 width: 100%;
 min-height: 50%;
-
+}
 @media (max-width: 682px) {
 width: 100%;
 min-height: 20%;
@@ -110,8 +110,12 @@ export const CalculatorWrapper = styled.div`
   border-radius: 8px;
   display: grid;
   justify-content: center;
-  height: 947px;
+  height: 100%;
+  min-height:500px ;
   padding: 50px;
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
   h1 {
     color: #FFFFFF;
     width: 100%;
@@ -253,6 +257,10 @@ export const LoantypeContainer = styled.div`
   text-align: center;
   color: #464040;
   padding: 50px;
+  @media(max-width: 600px) {
+    padding: 20px;
+    
+  }
 `;
 export const GridContainer = styled.div`
   display: grid;
@@ -262,11 +270,13 @@ export const GridContainer = styled.div`
   margin-top: 60px;
   justify-items: center;
   @media (max-width: 913px) {
-    // future    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-
-
-    column-gap: 40px;
+     column-gap: 40px;
   row-gap: 24px;
+}
+@media (max-width: 450px) {
+    column-gap: 20px;
+  row-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 `;
@@ -284,6 +294,7 @@ export const ImageBox = styled.div`
   height: 50px;
   border-radius: 12px;
 }
+
 `;
 export const CommentContainer = styled.div`
   display: grid;
@@ -305,6 +316,7 @@ export const CommentContainer = styled.div`
   }
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr ;
+    column-gap: 10px;
   }
 
 `;
@@ -318,6 +330,9 @@ export const CommentSection = styled.div`
   border-radius: 8px;
   border: none;
   max-width: 1200px;
+  @media (max-width: 400px) {
+    padding: 15px;
+    }
   h2 {
     color: #363E98;
   }
@@ -328,7 +343,6 @@ export const PartnerContainer = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
-  max-height: px;
   margin: 0 auto;
   padding: 70px 100px;
   @media (max-width: 768px) {
@@ -348,6 +362,9 @@ export const PartnerSection = styled.div`
     max-width: 230px;
     @media (max-width: 560px) {
       max-width: 130px;
+    }
+    @media (max-width: 400px) {
+      max-width: 90px;
     }
   }
 `;
