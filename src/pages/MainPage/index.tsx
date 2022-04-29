@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { Radio } from 'antd';
+//import { Radio } from 'antd';
 import {
   LoanContainer,
   AssistanceContainer,
@@ -20,6 +20,7 @@ import {
   CommentSection,
   PartnerContainer,
   PartnerSection,
+  AssistanInner
 } from "../../style/MainPage/mainpage";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -61,9 +62,9 @@ const MainPage = (props: any) => {
         </div>
       </LoanContainer>
       <AssistanceContainer>
-        <div>
+        <AssistanInner>
           <img src={Assistance} alt="assistance" />
-        </div>
+        </AssistanInner>
         <div>
           <h1>Need assistance?</h1>
           <p>Request a call back</p>

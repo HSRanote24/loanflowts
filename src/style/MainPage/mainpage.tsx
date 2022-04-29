@@ -22,6 +22,13 @@ export const LoanContainer = styled.div`
     align-self:center;
     padding: 45px 35px 60px 35px;
   margin: 0 auto;
+  
+  @media (max-width: 682px) {
+    width: 100%;
+    min-height: 20%;
+    padding: 25px 20px 30px 20px;
+  }
+
   }
   div > button{
     padding: 16px 16px;
@@ -46,9 +53,7 @@ align-items: center;
 justify-content: center;
   background: #F2F3F8;
   padding: 50px;
-  image {
-    width: 555px;
-    
+
   }
   div > h1 {
     color: #363B97;
@@ -57,6 +62,17 @@ justify-content: center;
     /* padding-top: 5px;  */
     flex-direction: column;
   }
+  
+`;
+export const AssistanInner = styled.div`
+img {
+width: 100%;
+min-height: 50%;
+
+@media (max-width: 682px) {
+width: 100%;
+min-height: 20%;
+}
 `;
 export const AssistanceForm = styled.form`
   display: grid;
@@ -126,7 +142,10 @@ export const LoanAmount = styled.div`
     width: 400px;
     color: #FFFFFF;
   }
+  @media (max-width: 550px) {
   
+    flex-direction: column;
+  }
 `;
 export const LoanTenure = styled.div`
   display: flex;
@@ -249,10 +268,6 @@ export const GridContainer = styled.div`
     column-gap: 40px;
   row-gap: 24px;
 }
-@media (max-width: 500px) {
-    column-gap: 10px;
-  row-gap: 4px;
-}
 
 `;
 export const ImageBox = styled.div`
@@ -263,6 +278,12 @@ export const ImageBox = styled.div`
   height: 100px;
   background: #FFFFFF;
   border-radius: 25px;
+  
+@media (max-width: 690px) {
+  width: 70px;
+  height: 50px;
+  border-radius: 12px;
+}
 `;
 export const CommentContainer = styled.div`
   display: grid;
@@ -271,7 +292,8 @@ export const CommentContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 527px;
+  min-height: 527px;
+  height:100%;
   background: #363B97;
   h1 {
     color: #FFFFFF;
@@ -281,6 +303,10 @@ export const CommentContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr ;
+  }
+
 `;
 export const CommentSection = styled.div`
   display: grid;
@@ -291,6 +317,7 @@ export const CommentSection = styled.div`
   background-color: #FFFFFF;
   border-radius: 8px;
   border: none;
+  max-width: 1200px;
   h2 {
     color: #363E98;
   }
@@ -301,7 +328,7 @@ export const PartnerContainer = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
-  max-width: 1200px;
+  max-height: px;
   margin: 0 auto;
   padding: 70px 100px;
   @media (max-width: 768px) {
@@ -319,5 +346,8 @@ export const PartnerSection = styled.div`
   grid-template-columns: repeat(3, 1fr);
   div > img {
     max-width: 230px;
+    @media (max-width: 560px) {
+      max-width: 130px;
+    }
   }
 `;
