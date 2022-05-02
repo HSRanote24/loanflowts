@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { Radio } from 'antd';
+export const ContainerRadio = styled(Radio)({
+
+});
 export const LoanContainer = styled.div`
  display: flex;
   align-items: center;
@@ -155,8 +159,12 @@ export const LoanTenure = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 56px;
-  p {
+  border: 2px solid #FFFFFF;
+  background:  #FFFFFF;
+  padding: 2px;
+  border-radius: 10px;
+ /*  column-gap: 56px; */
+ /*  p {
     color: #FFFFFF;
     font-weight: 900;
     font-family: sans-serif;
@@ -177,7 +185,7 @@ export const LoanTenure = styled.div`
     font-weight: 900;
     font-size: medium;
     border-color: #fff;
-  }
+  } */
 `;
 export const TenureButton = styled.button`
   background: #FFFFFF;
@@ -353,6 +361,13 @@ export const PartnerContainer = styled.div`
     color: #363b97;
   }
 `;
+
+export const radioInnerContainer =
+  { background: '#83D1D8', borderRadius: 10, flex: 1, paddingBottom: 4, marginRight: 6 };
+export const radioOuterContainer =
+  { background: '#FAFAFA', padding: 4, borderRadius: 10, alignItems: 'center', justifyContent: 'space-evenly', }
+
+
 export const PartnerSection = styled.div`
   display: grid;
   align-items: center;

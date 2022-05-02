@@ -1,26 +1,33 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const LoanContainer = styled.div`
+export const CookieContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #f3fafb;
+  div {
+    display: grid;
+    justify-content: center;
+    padding: 50px;
+  }
+  h1 {
+    color: #363e98;
+  }
+  p {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+`;
+export const CookieWrapper = styled.div`
   padding: 50px;
-  min-height: auto;
-  div > p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 54px;
-    color: #363E98;
+  h1 {
+    color: #363e98;
   }
-  div > button {
-    background: #363B97;
-    border-radius: 8px;
-    height: 48px;
-    width: 145px;
-    color: #FFFFFF;
-  }
-  div > img {
-    width: 100%;
+  p {
+    font-weight: 300;
+    font-size: 15px;
   }
 `;

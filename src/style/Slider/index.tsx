@@ -31,16 +31,23 @@ margin-right: auto;
 
 }
 `;
+
 const light_Blue = "#83D1D8";
-const grey = "#cfcfcf";
+const grey_in = " #FFFFFF";
 export const Container1 =styled(Slider)(({ theme }) => ({
   color: light_Blue, 
   "& .MuiSlider-thumb": {
-    backgroundColor: light_Blue 
+    backgroundColor: grey_in ,
+    border: '1.5px solid #83D1D8'
   },
   "& .MuiSlider-rail": {
-    color: grey 
+    color: grey_in ,
+    backgroundColor: grey_in ,
+  
+  },
+  "& 	.MuiSlider-track":{
+    color: light_Blue ,
+    border: '2px solid light_Blue'
   }
   
 }));
-

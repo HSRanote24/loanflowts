@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-//import { Radio } from 'antd';
+
 import {
   LoanContainer,
   AssistanceContainer,
@@ -20,8 +20,13 @@ import {
   CommentSection,
   PartnerContainer,
   PartnerSection,
-  AssistanInner
+  AssistanInner,
+  ContainerRadio,
+  radioInnerContainer,
+  radioOuterContainer
+  
 } from "../../style/MainPage/mainpage";
+import 'antd/dist/antd.css';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Worker from "../../assets/images/worker.jpg";
@@ -87,16 +92,18 @@ const MainPage = (props: any) => {
           <p>Loan amount</p>
           <Slider />
         </LoanAmount>
-      {/*   <LoanTenure>
+     
+      <LoanAmount>
           <p>Loan Tenure</p>
-          <Radio.Group defaultValue="a" buttonStyle="solid" optionType="button" > */}
-            {/*  <Radio.Button  value="a">3 months</Radio.Button>
-      <Radio.Button value="b">6 months</Radio.Button>
-      <Radio.Button value="c">9 months</Radio.Button>
-      <Radio.Button value="d">12 months</Radio.Button> */}
-        {/*   </Radio.Group>
-          <button>6 MONTHS</button>
-        </LoanTenure> */}
+          <LoanTenure>
+          <ContainerRadio.Group style={radioOuterContainer} defaultValue="3 Months" buttonStyle="solid" >
+        <ContainerRadio.Button style={radioInnerContainer} value="3 Months">3 Months</ContainerRadio.Button>
+        <ContainerRadio.Button style={radioInnerContainer} value="6 Months">6 Months</ContainerRadio.Button>
+        <ContainerRadio.Button style={radioInnerContainer} value="9 Months">9 Months</ContainerRadio.Button>
+        <ContainerRadio.Button style={radioInnerContainer} value="12 Months">12 Months</ContainerRadio.Button>
+      </ContainerRadio.Group>
+          </LoanTenure>
+          </LoanAmount>
         <LoanAmount>
           <p>Rate of interest</p>
           <Slider />
